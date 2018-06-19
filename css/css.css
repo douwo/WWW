@@ -4,7 +4,7 @@
 .top span{ float:right;}
 .top span a{ padding:0 1px; color:#666;}
 
-.head{ height:80px; padding-top:25px; background:#fff;}
+.head{ height:80px; background:#fff;}
 .t-ry{ margin-left:888px; display:inline-block;}
 
 .nav{ background:#0d7ff6; height:42px; line-height:43px; font-size:16px;}
@@ -40,7 +40,7 @@
 .ban { width: 1600px; height: 400px; position: absolute; top: 0; left: 50%; margin-left: -780px; overflow: hidden; }
 .bans { width: 1600px; height: 400px; margin: 0 auto; display: block; }
 .bans li { width: 1600px; height: 400px; float: left; }
-.banst{width: 205px;height: 15px;position: absolute;bottom: 20px;left: 45%;margin-left: -49px;z-index: 30;}
+.banst{width: 205px;height: 15px;position: absolute;bottom: 20px;left: 47%;margin-left: -49px;z-index: 30;}
 .banst li{width: 35px;height: 8px; float: left;margin-right: 6px;background:#999999;cursor: pointer;}
 .banst li.active{ background:#0262c9;}
 
@@ -182,10 +182,10 @@
 
 .footer { height: 222px; background: #3E8BF5; }
 .footerCont { height: 222px; }
-.flogo { margin-top: 53px; margin-left: 20px; float: left; }
-.footerCont ul { background: url(../images/ff_bg.jpg) no-repeat left center; width: 401px; height: 70px; float: left; color: #fff; margin-top: 40px; margin-left: 30px; padding: 22px 30px 45px 30px; }
+.flogo { margin-top: 53px; float: left; }
+.footerCont ul { background: url(../images/ff_bg.jpg) no-repeat left center; width: 370px; height: 70px; float: left; color: #fff; margin-top: 40px; margin-left: 18px; padding: 22px 30px 45px 30px; }
 .footerCont ul li { font-size: 12px; line-height: 24px; }
-.qrcode { width: 232px; height: 136px; float: right; background: url(../images/ff_bg.jpg) no-repeat left center; margin-top: 40px; }
+.qrcode { width: auto; height: 136px; background: url(../images/ff_bg.jpg) no-repeat left center; margin-top: 40px; }
 .qrcode img { margin-left: 20px; _margin-left: 15px; margin-top: 15px; }
 .copyRight {height: 45px;background: #696969;text-align: center;}
 .copyRight p {height: 45px;line-height: 45px;color: #fff;font-size: 12px;}
