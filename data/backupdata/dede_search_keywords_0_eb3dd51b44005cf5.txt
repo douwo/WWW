@@ -1,0 +1,1 @@
+INSERT INTO `dede_search_keywords` VALUES('1','肛肠','肛肠','3','25','1493116141','0','0');

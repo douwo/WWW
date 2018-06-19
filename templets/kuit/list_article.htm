@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<link href="/css/global.css" rel="stylesheet" type="text/css" />
+<link href="/css/css.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/js/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="/js/jquery-doc.js"></script>
+<script type="text/javascript" src="/js/js.js"></script>
+</head>
+<body>
+{dede:include filename="head.htm"/} 
+<!--/conStart-->
+<div class="index1 w1000">
+  <div class="tz"> <span class="fl"><a href='/swt' target="_blank">大便拉不净</a><a href='/swt' target="_blank">腹痛</a><a href='/swt' target="_blank">放屁</a></span>
+    <div class="ss fr">
+      <form name="formsearch" action="/plus/search.php">
+        <input name="q" type="text" class="sea_input fl" placeholder="请输入您要咨询的问题">
+        <input type="submit" value="搜  索" class="sea_btn fr">
+      </form>
+    </div>
+  </div>
+  <div class="con mt10">
+    <div class="con-l fl">
+      <div class="position"><span>当前页面:</span>{dede:field name='position'/}</div>
+      <div class="article">
+        <div class="article1">
+          <div class="lis_1">
+            <dl class="d1" id="dif_img">
+              <img src="/images/{dede:field.typeid/}.jpg" width="250" height="260">
+            </dl>
+            <dl>
+              <h3>推荐阅读</h3>
+              <ul>
+              {dede:arclist  limit='0,6' titlelen='40'}
+                <li><span>【<a href="[field:typeurl/]" target="_blank">[field:typename/]</a>】</span><a href="[field:arcurl/]">[field:title/]</a></li>
+                {/dede:arclist}
+              </ul>
+            </dl>
+            <div class="null"></div>
+          </div>
+          <div class="clear"></div>
+          {dede:list pagesize='11'}
+          <dl class="li_box">
+            <div>
+              <h2><a href="[field:arcurl/]" class="L">[field:title/]</a><a href="/swt" target="_blank" class="R">我要咨询</a></h2>
+            </div>
+            <div class="null"></div>
+            <div class="p1">[field:description function='cn_substr(@me,320)'/]...<a href="[field:arcurl/]">[详情]</a></div>
+            <div class="p2">点击：[field:click/]次  发表[field:pubdate function="GetDateTimeMK(@me)"/]</div>
+          </dl>
+          {/dede:list}
+          <div class="ZH_pages">
+            <ul class="pagelist">
+              {dede:pagelist listitem="info,index,end,pre,next,pageno,option" listsize="5"/}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Right-->
+    {dede:include filename="Right.htm"/}
+    <div class="clear"></div>
+    <!--/Right--> 
+  </div>
+  <div class="main4 mt20">
+    <div class="t t1">
+      <h3>全国连锁 · 肛肠专科<b>/  Anorectal specialist</b></h3>
+      <p class="fr"><i class="fl">了解更多详情<em>INFO＞</em></i><span class="fr"><a onclick="online('8888gcz_liansuo');return false;" href="javascript:;" target="_blank" class="more"></a></span></p>
+      <div class="clear"></div>
+    </div>
+    <div class="main4n">
+      <ul>
+        <li><img src="/images/xs.jpg" alt="" /></li>
+        <li><img src="/images/xs-02.jpg" alt="" /></li>
+        <li><img src="/images/xs-03.jpg" alt="" /></li>
+        <li class="xs"><img src="/images/xs-04.jpg" alt="" /></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!--foot--> 
+{dede:include filename="footer.htm"/}
+</body>
+</html>

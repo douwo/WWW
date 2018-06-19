@@ -1,0 +1,488 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{dede:global.cfg_webname/}</title>
+<meta name="description" content="{dede:global.cfg_description/}" />
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<link href="/css/global.css" rel="stylesheet" type="text/css" />
+<link href="/css/css.css" rel="stylesheet" type="text/css" />
+<link href="/css/indexzj.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/js/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="/js/jquery-doc.js"></script>
+<script type="text/javascript" src="/js/mclass.js"></script>
+<script type="text/javascript" src="/js/js.js"></script>
+</head>
+<body>
+{dede:include filename="head.htm"/} 
+<!--/conStart-->
+<div class="index1 w1000">
+  <div class="tz"> <span class="fl"><a href='/swt' target="_blank">大便拉不净</a><a href='/swt' target="_blank">腹痛</a><a href='/swt' target="_blank">腹胀</a></span>
+    <div class="ss fr">
+      <form name="formsearch" action="/plus/search.php">
+        <input name="q" type="text" class="sea_input fl" placeholder="请输入您要咨询的问题" />
+        <input type="submit" value="搜  索" class="sea_btn fr" />
+      </form>
+    </div>
+  </div>
+  <div class="main1 mt10">
+    <div class="smallban fl">
+      <div class="smallban2" id="smallban2">
+        <ul class="smallban3" id="smallban3">
+          <li class="active"><a href="/swt" target="_blank"><img src="/images/b12.gif" /><span>北京某某肛肠专科医院</span></a></li>
+          <li><a href="/swt" target="_blank"><img src="/images/b12.gif" /><span>北京某某肛肠专科医院</span></a> </li>
+        </ul>
+      </div>
+      <ul class="smallban1" id="smallban1">
+        <li class="active">1</li>
+        <li>2</li>
+      </ul>
+    </div>
+    <script>
+					new Marquee(
+					{
+						MSClassID : "smallban2",
+						ContentID : "smallban3",
+						TabID	  : "smallban1",
+						Direction : 2,
+						Step	  : 0.3,
+						Width	  : 305,
+						Height	  : 367,
+						Timer	  : 20,
+						DelayTime : 3000,
+						WaitTime  : 0,
+						ScrollStep: 305,
+						SwitchType: 0,
+						AutoStart : 1
+					});
+				</script>
+    <div class="news fl">
+      <div class="news-t"><span>{dede:type typeid = '3'}<a href="[field:typelink /]" target="_blank"><img src="/images/sad-02.gif" alt="某某新闻" /></a>{/dede:type}</span><img src="/images/sad.gif" alt="某某新闻" /></div>
+      	{dede:arclist  limit='0,1'   type='image.'  typeid='3'  imgwidth='111' imgheight='80'  titlelen='40' infolen='80'} 
+      <div class="newst"> <a href="[field:arcurl/]" target="_blank" class="newsimg">[field:image/]</a>
+        <h2><a href="[field:arcurl/]" class="cl">[field:title/]</a></h2>
+        <p>[field:info/]...<a href="[field:arcurl/]">[查看全文]</a></p>
+      </div>
+      {/dede:arclist}
+      <ul class="newsn">
+      {dede:arclist limit='0,4' typeid='3' titlelen='70' infolen='70'} 
+        <li>
+          <div class="newsdate fl"><span class="dd">[field:pubdate function='strftime("%d",@me)'/]</span><span class="mm">[field:pubdate function='strftime("%m",@me)'/]月</span></div>
+          <div class="newslist fl"> <b><a href="[field:arcurl/]">[field:title/]</a></b>
+            <p>[field:info/]</p>
+          </div>
+        </li>
+      {/dede:arclist}
+      </ul>
+    </div>
+    <div class="main13 fr">
+      <div class="main13-t"><a id="hd1" class="on">医生</a><a id="hd2">推荐</a><a id="hd3">最新</a></div>
+      <div class="main13-n">
+        <div id="hdn1" style="display:block">
+          <ul>
+          {dede:arclist limit='0,4' typeid='5' titlelen='70' } 
+            <li><a href="[field:arcurl/]">[field:title/]</a></li>
+            {/dede:arclist}
+          </ul>
+        </div>
+        <div id="hdn2" style="display:none">
+          <ul>
+          {dede:arclist limit='0,4' typeid='2' titlelen='70' orderby='hot' } 
+            <li><a href="[field:arcurl/]">[field:title/]</a></li>
+            {/dede:arclist}
+          </ul>
+        </div>
+        <div id="hdn3" style="display:none">
+          <ul>
+           {dede:arclist limit='0,4' typeid='2' titlelen='70' orderby='pubdate'} 
+            <li><a href="[field:arcurl/]">[field:title/]</a></li>
+            {/dede:arclist}
+          </ul>
+        </div>
+        <div class="main3zx mt10"> <a href="/swt" target="_blank" class="a1"></a> <a href="/swt" target="_blank" class="a2"></a> <a href="/swt" target="_blank" class="a3"></a> <a href="/swt" target="_blank" class="a4"></a> <a href="/swt" target="_blank" class="a5"></a> <a href="/swt" target="_blank" class="a6"></a> </div>
+      </div>
+    </div>
+  </div>
+  <div class="main2 mt10">
+    <div class="t t1">
+      <h3>10多年·名医云集<b>/ Gold medical group 《专家文章介绍样式多，所以这里没有调用标签，请注意》</b></h3>
+      <p class="fr"><i class="fl">你有痔疮，我们来解决<em>INFO＞</em></i><span class="fr"><a href="/swt" target="_blank" class="more"></a></span></p>
+    </div>
+    <div class="main2n">
+      <div class="main2nl fl">
+        <div id="slideBox" class="slideBox">
+          <div class="hd">
+            <ul>
+              <li><span>王凤超</span>Feng Chao Wang</li>
+              <li><span>吴红春</span>Hongchun Wu</li>
+              <li><span>李玉红</span>Yuhong Li</li>
+              <li><span>周玉兰</span>YuLan Zhou</li>
+            </ul>
+          </div>
+          <div class="bd">
+            <ul>
+              <li>
+                <dl class="fl zz">
+                  <img src="/images/la.gif" alt="王凤超" />
+                  <p class="p1">北京某某肛肠专科医院带头人</p>
+                  <p class="p2"><span>30多年他只看肛肠疾病</span><br />
+                    擅长：对肛肠病无痛疗法</p>
+                  <p class="p3">从医感言：<br />
+                    “医生是苦尽，病人则是甘来”，没有奉献精神的人当不成好医生。认真、耐心、负责是每一个医生比较基本的原则，看着病人怀着希望来，我就不忍心让他们失望而归<a href="/swt" target="_blank">[简介]</a></p>
+                </dl>
+                <dl class="fr rr">
+                  <a href="/swt" target="_blank"><img src="/images/la.png" alt="北京某某专家" /></a>
+                </dl>
+                <a href="/swt" rel="nofollow" target="_blank" class="avv">术后要多久可出院? >></a> </li>
+              <li>
+                <dl class="fl zz">
+                  <img src="/images/whc.gif" alt="吴红春" />
+                  <p class="p1">北京某某肛肠专科医院主治医师</p>
+                  <p class="p2"><span>10多年他只看肛肠疾病</span><br />
+                    擅长：肛肠科常见病及疑难病症</p>
+                  <p class="p3">从医感言：<br />
+                    对我而言，在这十多个年头里，患者的康复比荣誉更重要，他们的康复是对我工作的十分肯定!尽我所能，不辜负患者对我的信任... <a href="/swt" target="_blank">[简介]</a></p>
+                </dl>
+                <dl class="fr rr">
+                  <a href="/swt" target="_blank"><img src="/images/whc.png" alt="北京某某专家" /></a>
+                </dl>
+                <a href="/swt" rel="nofollow" target="_blank" class="avv">我有痔疮问题，要问问>>></a> </li>
+              <li>
+                <dl class="fl zz">
+                  <img src="/images/lyh.gif" alt="李玉红" />
+                  <p class="p1">北京某某肛肠专科医院主治医师</p>
+                  <p class="p2"><span>10多年她只看肛肠疾病</span><br />
+                    擅长：无刀除痔等顶尖技术</p>
+                  <p class="p3">从医感言：<br />
+                    “医德好，才医得好”医德不光是愿望，更是一种行动。所以细致，一直是我的习惯。对待每一件事情，对待每一位患者都是如此... <a href="/swt" target="_blank">[简介]</a></p>
+                </dl>
+                <dl class="fr rr" id="rr01">
+                  <a href="/swt" target="_blank"><img src="/images/lyh.png" alt="北京某某专家" /></a>
+                </dl>
+                <a href="/swt" rel="nofollow" target="_blank" class="avv">微创手术真的安全吗?>>></a> </li>
+              <li>
+                <dl class="fl zz">
+                  <img src="/images/llc.gif" alt="周玉兰" />
+                  <p class="p1">北京某某肛肠女性诊疗中心主任</p>
+                  <p class="p2"><span>20多年她只看肛肠疾病</span><br />
+                    擅长：对各类痔疮、肛裂、肛瘘、肛肠疑难病症的诊治有着丰富的临床经验</p>
+                  <p class="p3">从医感言：<br />
+                    每当看着患者觉得自己的责任更重看着患者满脸的笑容就像看见自己的孩子一样医者父母心... <a href="/swt" target="_blank">[简介]</a></p>
+                </dl>
+                <dl class="fr rr" id="rr02">
+                  <a href="/swt" target="_blank"><img src="/images/llc.png" alt="北京某某专家" /></a>
+                </dl>
+                <a href="/swt" rel="nofollow" target="_blank" class="avv">多年痔疮怎么破？>>></a> </li>
+            </ul>
+          </div>
+          <a class="prev" href="javascript:void(0)"></a> <a class="next" href="javascript:void(0)"></a> </div>
+        <script type="text/javascript">
+			jQuery(".slideBox").yx({mainCell:".bd ul",autoPlay:true});
+		</script> 
+      </div>
+      <div class="main2nr fr">
+        <div class="main2nr-t">{dede:type typeid = '7'}<a href="[field:typelink /]" target="_blank"><img src="/images/dy.gif" alt="答疑" /></a>{/dede:type}</div>
+        <div class="main2nr-n">
+          <ul>
+          {dede:arclist  limit='0,5'  typeid='7'  titlelen='50'}
+            <li 1><span>[field:pubdate function='strftime("%Y-%m-%d",@me)'/]</span>· <a href="[field:arcurl/]">[field:title/]</a></li>
+          {/dede:arclist}
+            
+          </ul>
+          <div class="freedh mt10">
+            <input name="telInput" id="telInput" type="text" class="telText fl" placeholder="输入您的手机号码1对1解答" onblur="javascript:if(this.value=='')this.value='请输入您的电话号码';" onfocus="javascript:if(this.value=='请输入您的电话号码')this.value='';"/>
+            <input name="callBtn" id="callBtn" type="submit" class="telSub fr" value='免费拨打' />
+          </div>
+          <div class="jbs mt10"> <a href="/swt" target="_blank" class="b1">痔疮好治吗</a> <a href="/swt" target="_blank" class="b2">治好要多少钱</a> <a href="/swt" target="_blank" class="b3">大便出血疼痛咋办</a> <a href="/swt" target="_blank" class="b4">治疗需要多久</a> <a href="/swt" target="_blank" class="b5">痔疮图片</a> <a href="/swt" target="_blank" class="b6">跪求治痔好医院</a> <a href="/swt" target="_blank" class="b7">肛门出血怎么办</a> <a href="/swt" target="_blank" class="b8">肛门痒</a> </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main3 mt10">
+    <div class="t t2">
+      <h3>疾病专区 · 服务肛肠<b>/ Disease zone</b></h3>
+      <p class="fr"><i class="fl">解答更多肛肠疾病问题<em>INFO＞</em></i><span class="fr"><a href="/swt" target="_blank" class="more"></a></span></p>
+      <div class="clear"></div>
+    </div>
+    <div class="main3n">
+      <div class="main3n-l fl">
+        <ul>
+        {dede:channelartlist row=6 typeid = '8,9,10,11,12'}
+          <a id="jb{dede:global name=itemindex runphp='yes'}@me=@me;{/dede:global}" class="{dede:global.itemindex  runphp='yes'}if(@me==1){@me='on';}else{@me='';}{/dede:global.itemindex}">
+          <li> <span></span>
+            <h3>{dede:field name='typename'/}诊疗专区<i>
+            <script>if({dede:field.typeid/} == 8){
+           document.write("Hemorrhoids disease");
+        }
+		if({dede:field.typeid/} == 9){
+           document.write("The anus injury");
+        }
+		if({dede:field.typeid/} == 10){
+           document.write("Crissum diseases");
+        }
+		if({dede:field.typeid/} == 11){
+           document.write("The discharge of disease");
+        }
+		if({dede:field.typeid/} == 12){
+           document.write("Intestinal disease");
+        }</script></i></h3>
+          </li>
+          </a>
+        {/dede:channelartlist}
+        </ul>
+      </div>
+      <div class="main3n-r fl">
+        <div id="jbn1" style="display:block">
+          <div class="jbnnt">
+          {dede:channelartlist row=6 typeid = '13,14,15,16'}
+           <a id="jbb1{dede:global name=itemindex runphp='yes'}@me=@me;{/dede:global}" class="{dede:global.itemindex  runphp='yes'}if(@me==1){@me='on';}else{@me='';}{/dede:global.itemindex}">{dede:field name='typename'/}</a>
+           {/dede:channelartlist} </div>
+          <div class="jbnnn">
+          {dede:channelartlist row=6 typeid = '13,14,15,16'}
+            <div id="jbbn1{dede:global name=itemindex runphp='yes'}@me=@me;{/dede:global}" style="display:{dede:global.itemindex  runphp='yes'}if(@me==1){@me='block';}else{@me='none';}{/dede:global.itemindex};">
+              <div class="tuijians mt10">
+                <div class="tuijiansl fl">
+                  <dl>
+                  {dede:arclist  limit='0,1'  type='image.'   titlelen='150' infolen='150'  titlelen='26' infolen='80'}
+                    <dt><a href="[field:arcurl/]">[field:image/]</a></dt>
+                    <dd> <span><a href="[field:arcurl/]">[field:title/]</a></span>
+                      <p>[field:info/]...<a href="[field:arcurl/]">[查看全文]</a></p>
+                    </dd>
+                  {/dede:arclist}
+                  </dl>
+                  <div class="clear"></div>
+                  <ul>
+                  {dede:arclist  limit='0,3' titlelen='50' }
+                    <li>·<a href="[field:arcurl/]">[field:title/]</a></li>
+                  {/dede:arclist}
+                  </ul>
+                </div>
+                <div class="tuijiansl fr">
+                  <dl>
+                  {dede:arclist  limit='1,1'  type='image.'   titlelen='150' infolen='150'  titlelen='26' infolen='80'}
+                    <dt><a href="[field:arcurl/]">[field:image/]</a></dt>
+                    <dd> <span><a href="[field:arcurl/]">[field:title/]</a></span>
+                      <p>[field:info/]...<a href="[field:arcurl/]">[查看全文]</a></p>
+                    </dd>
+                  {/dede:arclist}
+                  </dl>
+                  <div class="clear"></div>
+                  <ul>
+                  {dede:arclist  limit='3,3' titlelen='50' }
+                    <li>·<a href="[field:arcurl/]">[field:title/]</a></li>
+                  {/dede:arclist}
+                  </ul>
+                </div>
+              </div>
+            </div>
+            {/dede:channelartlist}
+          </div>
+        </div>
+        <div id="jbn2" style="display:none">
+          <div class="jbnnt">
+          {dede:channelartlist row=6 typeid = '17,18,19,20'}
+           <a id="jbb2{dede:global name=itemindex runphp='yes'}@me=@me;{/dede:global}" class="{dede:global.itemindex  runphp='yes'}if(@me==1){@me='on';}else{@me='';}{/dede:global.itemindex}">{dede:field name='typename'/}</a>
+           {/dede:channelartlist} </div>
+          <div class="jbnnn">
+          {dede:channelartlist row=6 typeid = '17,18,19,20'}
+            <div id="jbbn2{dede:global name=itemindex runphp='yes'}@me=@me;{/dede:global}" style="display:{dede:global.itemindex  runphp='yes'}if(@me==1){@me='block';}else{@me='none';}{/dede:global.itemindex};">
+              <div class="tuijians mt10">
+                <div class="tuijiansl fl">
+                  <dl>
+                  {dede:arclist  limit='0,1'  type='image.'   titlelen='150' infolen='150'  titlelen='26' infolen='80'}
+                    <dt><a href="[field:arcurl/]">[field:image/]</a></dt>
+                    <dd> <span><a href="[field:arcurl/]">[field:title/]</a></span>
+                      <p>[field:info/]...<a href="[field:arcurl/]">[查看全文]</a></p>
+                    </dd>
+                  {/dede:arclist}
+                  </dl>
+                  <div class="clear"></div>
+                  <ul>
+                  {dede:arclist  limit='0,3' titlelen='50' }
+                    <li>·<a href="[field:arcurl/]">[field:title/]</a></li>
+                  {/dede:arclist}
+                  </ul>
+                </div>
+                <div class="tuijiansl fr">
+                  <dl>
+                  {dede:arclist  limit='1,1'  type='image.'   titlelen='150' infolen='150'  titlelen='26' infolen='80'}
+                    <dt><a href="[field:arcurl/]">[field:image/]</a></dt>
+                    <dd> <span><a href="[field:arcurl/]">[field:title/]</a></span>
+                      <p>[field:info/]...<a href="[field:arcurl/]">[查看全文]</a></p>
+                    </dd>
+                  {/dede:arclist}
+                  </dl>
+                  <div class="clear"></div>
+                  <ul>
+                  {dede:arclist  limit='3,3' titlelen='50' }
+                    <li>·<a href="[field:arcurl/]">[field:title/]</a></li>
+                  {/dede:arclist}
+                  </ul>
+                </div>
+              </div>
+            </div>
+            {/dede:channelartlist}
+          </div>
+        </div>
+        <div id="jbn3" style="display:none">
+          <div class="jbnnt">
+          {dede:channelartlist row=6 typeid = '21,22,23,24,25,26'}
+           <a id="jbb3{dede:global name=itemindex runphp='yes'}@me=@me;{/dede:global}" class="{dede:global.itemindex  runphp='yes'}if(@me==1){@me='on';}else{@me='';}{/dede:global.itemindex}">{dede:field name='typename'/}</a>
+           {/dede:channelartlist} </div>
+          <div class="jbnnn">
+          {dede:channelartlist row=6 typeid = '21,22,23,24,25,26'}
+            <div id="jbbn3{dede:global name=itemindex runphp='yes'}@me=@me;{/dede:global}" style="display:{dede:global.itemindex  runphp='yes'}if(@me==1){@me='block';}else{@me='none';}{/dede:global.itemindex};">
+              <div class="tuijians mt10">
+                <div class="tuijiansl fl">
+                  <dl>
+                  {dede:arclist  limit='0,1'  type='image.'   titlelen='150' infolen='150'  titlelen='26' infolen='80'}
+                    <dt><a href="[field:arcurl/]">[field:image/]</a></dt>
+                    <dd> <span><a href="[field:arcurl/]">[field:title/]</a></span>
+                      <p>[field:info/]...<a href="[field:arcurl/]">[查看全文]</a></p>
+                    </dd>
+                  {/dede:arclist}
+                  </dl>
+                  <div class="clear"></div>
+                  <ul>
+                  {dede:arclist  limit='0,3' titlelen='50' }
+                    <li>·<a href="[field:arcurl/]">[field:title/]</a></li>
+                  {/dede:arclist}
+                  </ul>
+                </div>
+                <div class="tuijiansl fr">
+                  <dl>
+                  {dede:arclist  limit='1,1'  type='image.'   titlelen='150' infolen='150'  titlelen='26' infolen='80'}
+                    <dt><a href="[field:arcurl/]">[field:image/]</a></dt>
+                    <dd> <span><a href="[field:arcurl/]">[field:title/]</a></span>
+                      <p>[field:info/]...<a href="[field:arcurl/]">[查看全文]</a></p>
+                    </dd>
+                  {/dede:arclist}
+                  </dl>
+                  <div class="clear"></div>
+                  <ul>
+                  {dede:arclist  limit='3,3' titlelen='50' }
+                    <li>·<a href="[field:arcurl/]">[field:title/]</a></li>
+                  {/dede:arclist}
+                  </ul>
+                </div>
+              </div>
+            </div>
+            {/dede:channelartlist}
+          </div>
+        </div>
+        <div id="jbn4" style="display:none">
+          <div class="jbnnt">
+          {dede:channelartlist row=6 typeid = '27,28,29,30'}
+           <a id="jbb4{dede:global name=itemindex runphp='yes'}@me=@me;{/dede:global}" class="{dede:global.itemindex  runphp='yes'}if(@me==1){@me='on';}else{@me='';}{/dede:global.itemindex}">{dede:field name='typename'/}</a>
+           {/dede:channelartlist} </div>
+          <div class="jbnnn">
+          {dede:channelartlist row=6 typeid = '27,28,29,30'}
+            <div id="jbbn4{dede:global name=itemindex runphp='yes'}@me=@me;{/dede:global}" style="display:{dede:global.itemindex  runphp='yes'}if(@me==1){@me='block';}else{@me='none';}{/dede:global.itemindex};">
+              <div class="tuijians mt10">
+                <div class="tuijiansl fl">
+                  <dl>
+                  {dede:arclist  limit='0,1'  type='image.'   titlelen='150' infolen='150'  titlelen='26' infolen='80'}
+                    <dt><a href="[field:arcurl/]">[field:image/]</a></dt>
+                    <dd> <span><a href="[field:arcurl/]">[field:title/]</a></span>
+                      <p>[field:info/]...<a href="[field:arcurl/]">[查看全文]</a></p>
+                    </dd>
+                  {/dede:arclist}
+                  </dl>
+                  <div class="clear"></div>
+                  <ul>
+                  {dede:arclist  limit='0,3' titlelen='50' }
+                    <li>·<a href="[field:arcurl/]">[field:title/]</a></li>
+                  {/dede:arclist}
+                  </ul>
+                </div>
+                <div class="tuijiansl fr">
+                  <dl>
+                  {dede:arclist  limit='1,1'  type='image.'   titlelen='150' infolen='150'  titlelen='26' infolen='80'}
+                    <dt><a href="[field:arcurl/]">[field:image/]</a></dt>
+                    <dd> <span><a href="[field:arcurl/]">[field:title/]</a></span>
+                      <p>[field:info/]...<a href="[field:arcurl/]">[查看全文]</a></p>
+                    </dd>
+                  {/dede:arclist}
+                  </dl>
+                  <div class="clear"></div>
+                  <ul>
+                  {dede:arclist  limit='3,3' titlelen='50' }
+                    <li>·<a href="[field:arcurl/]">[field:title/]</a></li>
+                  {/dede:arclist}
+                  </ul>
+                </div>
+              </div>
+            </div>
+            {/dede:channelartlist}
+          </div>
+        </div>
+        <div id="jbn5" style="display:none">
+          <div class="jbnnt">
+          {dede:channelartlist row=6 typeid = '31,32,33'}
+           <a id="jbb5{dede:global name=itemindex runphp='yes'}@me=@me;{/dede:global}" class="{dede:global.itemindex  runphp='yes'}if(@me==1){@me='on';}else{@me='';}{/dede:global.itemindex}">{dede:field name='typename'/}</a>
+           {/dede:channelartlist} </div>
+          <div class="jbnnn">
+          {dede:channelartlist row=6 typeid = '31,32,33'}
+            <div id="jbbn5{dede:global name=itemindex runphp='yes'}@me=@me;{/dede:global}" style="display:{dede:global.itemindex  runphp='yes'}if(@me==1){@me='block';}else{@me='none';}{/dede:global.itemindex};">
+              <div class="tuijians mt10">
+                <div class="tuijiansl fl">
+                  <dl>
+                  {dede:arclist  limit='0,1'  type='image.'   titlelen='150' infolen='150'  titlelen='26' infolen='80'}
+                    <dt><a href="[field:arcurl/]">[field:image/]</a></dt>
+                    <dd> <span><a href="[field:arcurl/]">[field:title/]</a></span>
+                      <p>[field:info/]...<a href="[field:arcurl/]">[查看全文]</a></p>
+                    </dd>
+                  {/dede:arclist}
+                  </dl>
+                  <div class="clear"></div>
+                  <ul>
+                  {dede:arclist  limit='0,3' titlelen='50' }
+                    <li>·<a href="[field:arcurl/]">[field:title/]</a></li>
+                  {/dede:arclist}
+                  </ul>
+                </div>
+                <div class="tuijiansl fr">
+                  <dl>
+                  {dede:arclist  limit='1,1'  type='image.'   titlelen='150' infolen='150'  titlelen='26' infolen='80'}
+                    <dt><a href="[field:arcurl/]">[field:image/]</a></dt>
+                    <dd> <span><a href="[field:arcurl/]">[field:title/]</a></span>
+                      <p>[field:info/]...<a href="[field:arcurl/]">[查看全文]</a></p>
+                    </dd>
+                  {/dede:arclist}
+                  </dl>
+                  <div class="clear"></div>
+                  <ul>
+                  {dede:arclist  limit='3,3' titlelen='50' }
+                    <li>·<a href="[field:arcurl/]">[field:title/]</a></li>
+                  {/dede:arclist}
+                  </ul>
+                </div>
+              </div>
+            </div>
+            {/dede:channelartlist}
+          </div>
+        </div>
+      </div>
+      <div class="hotrmxm fl mt10"> <span>热门项目</span> <a href="/swt" target="_blank"><img src="/images/s1.jpg" alt="PPH" /></a> <a href="/swt" target="_blank"><img src="/images/s1-02.jpg" alt="韩国电子肛肠镜" /></a> <a href="/swt" target="_blank"><img src="/images/s1-03.jpg" alt="HCPT" /></a> </div>
+    </div>
+  </div>
+  <div class="main4 mt20">
+    <div class="t t1">
+      <h3>业精于专· 专注肛肠<b>/  Anorectal specialist</b></h3>
+      <p class="fr"><i class="fl">了解更多详情<em>INFO＞</em></i><span class="fr"><a href="/swt" target="_blank" class="more"></a></span></p>
+      <div class="clear"></div>
+    </div>
+    <div class="main4n">
+      <ul>
+        <li><img src="/images/xs.jpg" alt="" /></li>
+        <li><img src="/images/xs-02.jpg" alt="" /></li>
+        <li><img src="/images/xs-03.jpg" alt="" /></li>
+        <li class="xs"><img src="/images/xs-04.jpg" alt="" /></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!--/conEnd--> 
+{dede:include filename="footer.htm"/}
+</body>
+</html>

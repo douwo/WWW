@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field.keywords/}" />
+<meta name="description" content="{dede:field.description function='html2text(@me)'/}" />
+<link href="/css/global.css" rel="stylesheet" type="text/css" />
+<link href="/css/css.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/js/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="/js/js.js"></script>
+<script type="text/javascript" src="/js/jquery-doc.js"></script>
+</head>
+<body>
+{dede:include filename="head.htm"/} 
+<!--/conStart-->
+<div class="index1 w1000">
+  <div class="tz"> <span class="fl"><a href='/swt' target="_blank">大便拉不净</a><a href='/swt' target="_blank">腹痛</a><a href='/swt' target="_blank">放屁</a></span>
+    <div class="ss fr">
+      <form name="formsearch" action="/plus/search.php">
+        <input name="q" type="text" class="sea_input fl" placeholder="请输入您要咨询的问题">
+        <input type="submit" value="搜  索" class="sea_btn fr">
+      </form>
+    </div>
+  </div>
+  <div class="con mt10">
+    <div class="con-l fl">
+      <div class="position"><span>当前页面:</span>{dede:field name='position'/}</div>
+      <div class="article">
+        <div class="article1">
+          <h2>{dede:field.title/}</h2>
+          <div class="artzx"><a href="/swt" target="_blank" class="c1">抢约名额 </a><a href="/swt" target="_blank" class="c2">免费电话</a><a href="/swt" target="_blank" class="c3">0元挂号</a><a href="/swt" target="_blank" class="c4">QQ问诊</a></div>
+          <div class="freecall">
+            <h6>不方便打字？请输入您的手机号码 </h6>
+            <span>
+            <input class="ipt mr10" name="telInput" id="telInput3" type="text" value="" placeholder="请输入您的电话号码！">
+            <input name="callBtn" id="callBtn3" type="submit" class="rb1" value="免费通话">
+            </span> 
+          </div>
+          <div class="article-n">
+            {dede:field.body/}
+          </div>
+          <div class="artbtzx"> <a href="/swt" target="_blank"><img src="/images/artzx_03.gif" alt="北京某某肛肠专科医院" /></a> <a href="/swt" target="_blank"><img src="/images/artzx_05.gif" alt="北京某某肛肠专科医院" /></a> <a href="/swt" target="_blank"><img src="/images/artzx_07.gif" alt="北京某某肛肠专科医院" /></a> </div>
+        </div>
+      </div>
+      <div class="xgwz mt20">
+        <div class="xgwzl fl">
+          <div class="xgwzl-t">
+            <h4>热门推荐 <i>/ Hot recommended</i></h4>
+          </div>
+          <div class="xgwzl-n">
+            <ul>
+            {dede:arclist titlelen=50 row=6 orderby='hot'} 
+<li><a href="[field:arcurl/]">[field:title/]</a></li> 
+{/dede:arclist} 
+            </ul>
+          </div>
+        </div>
+        <div class="xgwzr fl">
+          <dl>
+            <dt>看过本文的人还看了</dt>
+            {dede:arclist titlelen=30 row=2 orderby='hot' }
+            <dd><a href="[field:arcurl/]">[field:title/]</a><br />
+              <span>已有[field:click/]人看过</span></dd>
+              {/dede:arclist}
+          </dl>
+        </div>
+      </div>
+    </div>
+    <!--Right-->
+    {dede:include filename="Right.htm"/}
+    <div class="clear"></div>
+    <!--/Right--> 
+  </div>
+  <div class="main4 mt20">
+    <div class="t t1">
+      <h3>全国连锁 · 肛肠专科<b>/  Anorectal specialist</b></h3>
+      <p class="fr"><i class="fl">了解更多详情<em>INFO＞</em></i><span class="fr"><a href="/swt" target="_blank" class="more"></a></span></p>
+      <div class="clear"></div>
+    </div>
+    <div class="main4n">
+      <ul>
+        <li><img src="/images/xs.jpg" alt="" /></li>
+        <li><img src="/images/xs-02.jpg" alt="" /></li>
+        <li><img src="/images/xs-03.jpg" alt="" /></li>
+        <li class="xs"><img src="/images/xs-04.jpg" alt="" /></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!--foot--> 
+{dede:include filename="footer.htm"/}
+</body>
+</html>

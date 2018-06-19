@@ -1,0 +1,28 @@
+﻿@charset "utf-8";
+/*Reset*/
+html,body,div,span,object,iframe,th,em,img,code,h1,h2,h3,h4,h5,h6,p,a,dl,dt,dd,ul,li,form,label,input,textarea{font-family:"微软雅黑","宋体"; padding:0; margin:0; border:0;}
+ol,ul,li{list-style:none;}
+h1,h2,h3,h4,h5,h6{font-weight: normal;}
+img{vertical-align:top;}
+a{color:#666;text-decoration: none;}
+a:hover{text-decoration: underline;}
+div{ overflow:hidden;}
+em,i{ font-style:normal;}
+.fl{float:left;display: inline;}
+.fr{float:right;display: inline;}
+.w1000{ width:1000px; margin:0 auto;}
+.w980{ width:980px; margin:0 auto;}
+.mt10{ margin-top:10px;}
+.mr10{ margin-right:10px;}
+.mt20{ margin-top: 20px;}
+.mt30{ margin-top: 30px;}
+.mb20{ margin-bottom:20px;}
+.pt10{ padding-top:10px;}
+.pt20{ padding-top:20px;}
+.br1 { border:1px solid #e0e0e0; zoom: 1; }
+.clear { clear: both; line-height: 0; font-size: 0; }
+.red { color: red; }
+
+.white{ background:White;}
+.more { float: right; }
+.bgb{ background:#fff;}

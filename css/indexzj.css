@@ -1,0 +1,21 @@
+﻿.slideBox { width: 685px; height: 415px; overflow: hidden; position: relative; }
+.slideBox .hd { height: 35px; overflow: hidden; position: absolute; right: 0px; top: 0px; z-index: 1; width:685px; }
+.slideBox .hd ul { overflow: hidden; zoom: 1; float: left; }
+.slideBox .hd ul li { float: left; margin-left: 3px; display: inline; color: #fff; width: 134px; height: 35px;letter-spacing: -1px; line-height: 35px; text-align: center; background: #c2c2c2; cursor: pointer; }
+.slideBox .hd ul .li1 { margin-left: 0px; }
+.slideBox .hd ul li.on { background: #0d7ff6; color: #fff; width: 134px; height: 35px; }
+.slideBox .hd ul li span { font-size: 18px; color: #fff;letter-spacing: normal; margin-right: 4px; }
+.slideBox .bd { position: relative; height: 100%; z-index: 0; width: 685px; height: 363px;top: 46px; }
+.slideBox .bd ul { background: url(../images/doc.jpg) no-repeat left top; width: 685px; height: 370px; display: block; }
+.slideBox .bd li { zoom: 1; vertical-align: middle;  position: relative; height: 360px; }
+.slideBox .bd li .zz { width: 245px; text-align: center; height: 300px;margin: 25px 10px 0px 77px; display: inline; }
+.slideBox .bd li .zz img { padding-top: 20px; }
+.slideBox .bd li .zz .p1 { font-size: 14px; color: #fff; }
+.slideBox .bd li .zz .p2 { font-size: 14px; color: #fff; line-height: 26px; text-align: left; padding: 10px 0px 0px 30px; }
+.slideBox .bd li .zz .p2 span { color: #fffc00; font-size: 18px; }
+.slideBox .bd li .zz .p3 { color: #fff; font-size: 14px; text-align: left; padding: 10px 0px 0px 16px; }
+.slideBox .bd li .zz .p3 a { color: #fffc00; }
+.slideBox .bd li .rr { position: absolute; right: 60px; top: 0px; z-index: 10; }
+.slideBox .bd li .avv { color: #000; position: absolute; z-index: 99; bottom: 20px; right: 60px; display: block; width: 262px; height: 35px; text-align: center; font-size: 18px; color: #fff; line-height: 35px; border-radius: 3px; color: #fff; background: #fd9619; }
+.slideBox .prev, .slideBox .next { position: absolute; left: 3%; top: 50%; margin-top: -25px; display: block; width: 53px; height: 79px; background: url(../images/key_z.png); filter: alpha(opacity=80); opacity: 0.8; }
+.slideBox .next { left: auto; right: 3%; background-position: -53px 0px; }

@@ -1,0 +1,1 @@
+<a href="[field:typelink /]" target="_blank"><img src="/images/dy.gif" alt="答疑" /></a>
