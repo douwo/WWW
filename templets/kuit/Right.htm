@@ -13,7 +13,20 @@
         Gold Panel</h3>
       {dede:type typeid = '5'}<a href="[field:typelink /]"></a>{/dede:type}
     </dl>
-    <div id="slideBox" class="slideBox mt20">
+    
+  <div class="question mt10">
+    <dl class="li_tit tit">
+      <h3><span>你是不是想问</span><br />
+        You are not to ask</h3>
+      <a href="/swt" target="_blank"></a>
+    </dl>
+    <ul>
+    {dede:arclist  limit='0,9'  typeid='7'  titlelen='40'}
+      <li><a href="[field:arcurl/]">[field:title/]</a></li>
+    {/dede:arclist}
+    </ul>
+  </div>
+  <div id="slideBox" class="slideBox mt20">
       <div class="bd">
         <ul>
         {dede:arclist  limit='0,7'   type='image.'  typeid='5'  imgwidth='258' imgheight='224' } 
@@ -37,19 +50,6 @@
 				jQuery(".slideBox").yx({mainCell:".bd ul",effect:"left",autoPlay:true});
 			</script> 
   </div>
-  <div class="question mt10">
-    <dl class="li_tit tit">
-      <h3><span>你是不是想问</span><br />
-        You are not to ask</h3>
-      <a href="/swt" target="_blank"></a>
-    </dl>
-    <ul>
-    {dede:arclist  limit='0,9'  typeid='7'  titlelen='40'}
-      <li><a href="[field:arcurl/]">[field:title/]</a></li>
-    {/dede:arclist}
-    </ul>
-  </div>
-  
   <!--推荐方法-->
   <div class="jczt mt10">
     <dl class="li_tit tit">

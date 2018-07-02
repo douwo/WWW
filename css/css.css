@@ -4,14 +4,16 @@
 .top span{ float:right;}
 .top span a{ padding:0 1px; color:#666;}
 
-.head{ height:80px; background:#fff;}
+.head{ height:0px; background:#fff;}
+.head .logo img{width: 362px;}
+.users-logo{display: inline-block;height: 30px;width: 30px;float: left;margin-top: 7px;margin-left: 5px;background: url(../images/logo.png);background-position: cneter center;background-size: 100% 100%}
 .t-ry{ margin-left:888px; display:inline-block;}
 
-.nav{ background:#0d7ff6; height:42px; line-height:43px; font-size:16px;}
+.nav{ background:#fd9619; height:42px; line-height:43px; font-size:16px;}
 
-.nav-xm{ width:215px; background:#0a6ed6; text-align:center;}
+.nav-xm{ width:215px; background:#fd9619; text-align:center;}
 .nav-xm b{ color:#fff; width:215px; display:block;}
-.nav-xm b img{width: 15px;height: 15px; -webkit-transition: -webkit-transform 0.2s ease-out;-moz-transition: -moz-transform 0.2s ease-out;-ms-transition: -moz-transform 0.3s ease-out;-o-transition: -moz-transform 0.2s ease-out;transition: transform 0.2s ease-out;margin: 14px 0 0 20px;}
+.nav-xm b img{width: 15px;height: 15px; -webkit-transition: -webkit-transform 0.2s ease-out;-moz-transition: -moz-transform 0.2s ease-out;-ms-transition: -moz-transform 0.3s ease-out;-o-transition: -moz-transform 0.2s ease-out;transition: transform 0.2s ease-out;margin: 14px 0 0 5px;}
 .nav-xm:hover{ cursor:pointer;}
 .nav-xm:hover b img{ background:url(../images/z.gif);-webkit-transform: rotate(90deg);-moz-transform: rotate(90deg);transform: rotate(90deg);}
 .navs li{ float:left;}
@@ -42,7 +44,7 @@
 .bans li { width: 1600px; height: 400px; float: left; }
 .banst{width: 205px;height: 15px;position: absolute;bottom: 20px;left: 47%;margin-left: -49px;z-index: 30;}
 .banst li{width: 35px;height: 8px; float: left;margin-right: 6px;background:#999999;cursor: pointer;}
-.banst li.active{ background:#0262c9;}
+.banst li.active{ background:#F39801;}
 
 .index1{ background:#fff; padding:10px; width:980px;}
 .tz{ background:#f2f2f2; height:46px; line-height:46px; padding:0 10px;}
@@ -102,13 +104,13 @@
 .t{ background:url(../images/s2s.gif) repeat-x top; padding-top:15px; margin-bottom:10px; height:48px;}
 .t h3{ font-size:24px; color:#0d7ff6;float: left; margin-top:7px;}
 .t h3 b{ font-size:14px; color:#999; padding-left:5px; font-weight:normal;}
-.t p {width: 190px;float: right;}
+.t p {width: 190px;float: right;text-align: right}
 .t i {width: 150px;display: block; color:#0d7ff6; font-size:14px;}
 .t em {color: #bfbfbf;display: block; text-align:right;}
 .t a.more {width: 36px;height: 36px;display: block;transition: all 0.2s linear;}
 
 
-.t1 a{ background:url(../images/zxp.gif);}
+.t1 a{ background:url(../images/zxp.gif);transform: translateY(5px)}
 .main2n{}
 .main2nl{ width:685px;}
 
@@ -134,7 +136,7 @@
 .jbs a.b8{ background:#ec9f44; width:112px;*width:109px; margin-left:1px;}
 
 
-.t2 a {background: url(../images/ers.gif);}
+.t2 a {background: url(../images/qrcode_2.jpg);background-size: 100% 100%;transform: translateY(5px)}
 .main3n{ border-top:2px solid #0d7ff6;}
 .main3n-l{ width:250px; background:#f0faff;}
 .main3n-l a{ height:42px;padding: 20px 10px; display:block; border-bottom:1px solid #c4e2f8; border-right:1px solid #c4e2f8; border-left:1px solid #c4e2f8; color:#666;}
@@ -172,7 +174,8 @@
 .tuijiansl li a{ font-size:14px; color:#666;}
 
 
-.hotrmxm{ width:700px; margin-left:25px;}
+/* .hotrmxm{ width:700px; margin-left:25px;} */
+.hotrmxm{ width:100%; margin-left:25px;}
 .hotrmxm span{ display:inline-block; width:15px;height:92px; padding:5px 8px; line-height:22px;color:#fff; background:#0d7ff6; float:left; font-size:14px;}
 .hotrmxm a{ display:block; float:left; margin:5px 0 0 10px; }
 
